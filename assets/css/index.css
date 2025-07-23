@@ -71,4 +71,49 @@ body{
     text-decoration: none;
 }
 
+#aboutme{
+    /*background-image: url();*/
+}
+
+#about_me_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.about_me_item{
+    padding:20px;
+    max-width:300px;
+    max-height:300px;
+    border:2px solid white;
+}
+
+.about_me_item h3{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom:10px;
+}
+
+.about_me_item p{
+    padding:10px;
+    text-align: center;
+}
+
+#moreinfoaboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+#moreinfoaboutme a{
+    text-decoration: none;
+    color:#e6e6e6;
+}
+#moreinfoaboutme button{
+    background-color: #1e90ff;
+    padding:10px;
+    border:none;
+}
 
