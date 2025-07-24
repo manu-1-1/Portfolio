@@ -1,0 +1,53 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    height:100vh;
+    background-image:url("/assets/images/bg.png.png");
+    color:#e6e6e6;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0f2b56;
+    background: rgba(11, 12, 16, 0.4); /* semi-transparent dark */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding:10px;
+    height:10vh;
+    
+}
+.nav_el{
+    padding:15px;
+    text-decoration: none;
+    color:#e6e6e6;
+}
+
+#navbar img{
+    position:fixed;
+    left:5%;
+}
+
+#about_me_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutme{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    max-width: 80%;
+}
+
+#aboutme h3{
+    text-align: center;
+    font-size: 30px;
+    padding:15px;
+}
+
+#aboutme p{
+    padding:10px;
+}
