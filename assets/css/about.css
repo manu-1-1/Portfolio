@@ -51,3 +51,47 @@ body{
 #aboutme p{
     padding:10px;
 }
+
+#education{
+    display: flex;
+    flex-direction: column;
+}
+
+#education h2{
+    padding:15px;
+    font-size: 35px;;
+}
+
+.education-item{
+    max-height:200px;
+    min-height: 120px;
+    padding:10px;
+    margin:10px;
+}
+
+.education-item p{
+    padding:5px;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+}
+
+#languages{
+    display: flex;
+}
+
+#tools{
+    display: flex;
+}
+
+.skill-item{
+    padding:20px;
+    text-align: center;
+}
+
+.skill-logo{
+    width: 60px;
+    height: 60px;
+}
