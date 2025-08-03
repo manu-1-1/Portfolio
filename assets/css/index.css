@@ -117,3 +117,19 @@ body{
     border:none;
 }
 
+footer{
+    padding:25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, #000000, #0a2a43); 
+}
+
+#contact_logo{
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+    padding:10px;
+    margin-right:10px;
+}
