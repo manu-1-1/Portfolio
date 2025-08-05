@@ -91,6 +91,10 @@ body{
     display: flex;
 }
 
+#devolepment_tools{
+    display: flex;
+}
+
 .skill-item{
     padding:20px;
     text-align: center;
@@ -100,3 +104,27 @@ body{
     width: 60px;
     height: 60px;
 }
+
+#certifications{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.certificate{
+    background-color: #0d0f1a;
+    box-shadow: 0 0 20px rgba(118, 198, 232, 0.919);
+    border-radius: 10%;
+    padding:15px;
+    margin:15px;
+    border:2px solid rgba(255, 255, 255, 0.87);
+}
+
+.certificate h3,p,a{
+    text-decoration: none;
+    padding:10px;
+}
+
+
+
