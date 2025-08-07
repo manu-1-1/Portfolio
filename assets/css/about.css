@@ -71,7 +71,7 @@ body{
     margin:10px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 16px rgba(207, 191, 191, 0.4);
-    background: linear-gradient(135deg, #1b2a49, #145374, #000000);
+    background: linear-gradient(135deg, #033291, #000000);
 }
 
 .education-item p{
