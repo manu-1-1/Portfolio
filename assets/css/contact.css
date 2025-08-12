@@ -33,3 +33,32 @@ body{
 #underline{
     text-decoration: underline;
 }
+
+#send_message{
+    padding:15px;
+    margin:15px;
+    border:2px solid blue;
+}
+
+#send_message input{
+    display:block;
+    margin:15px;
+}
+
+#container{
+    display:flex;
+    color:white;
+    justify-content: center;
+}
+
+#get_in_touch{
+    display: flex;
+    flex-direction: column;
+    margin:15px;
+    border:2px solid blue;
+}
+
+.element{
+    display:flex;
+    padding:10px;
+}
