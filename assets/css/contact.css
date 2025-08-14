@@ -38,6 +38,7 @@ body{
     padding:15px;
     margin:15px;
     border:2px solid blue;
+    border-radius: 5%;
 }
 
 #send_message input{
@@ -56,9 +57,17 @@ body{
     flex-direction: column;
     margin:15px;
     border:2px solid blue;
+    border-radius: 5%;
 }
 
 .element{
     display:flex;
     padding:10px;
+    background: linear-gradient(90deg,rgb(0, 0, 44),rgb(0, 0, 0),rgb(14, 14, 31));
+    margin:15px;
+    border:2px solid rgb(12, 12, 91);
+}
+
+.img{
+    padding:5px 10px 5px 0px;
 }
