@@ -35,15 +35,39 @@ body{
 }
 
 #send_message{
+    max-width: 300px;
+    min-width: 250px;
     padding:15px;
     margin:15px;
     border:2px solid blue;
     border-radius: 5%;
+    max-height: fit-content;
 }
 
-#send_message input{
+#send_message textarea{
+    min-height:120px;
+}
+#send_message h3{
+    margin:0px 0px 10px 0px;
+    text-align: center;
+}
+
+#send_message button{
+    padding: 5px;
+    background-color: rgb(34, 126, 247);
+    display: flex;
+    gap:5px;
+    border-radius:5px;
+    border: 2px solid rgb(30, 9, 221);
+}
+
+.input_ele{
+    width: 95%;
     display:block;
-    margin:15px;
+    margin:10px 0px 10px 0px ;
+    height:30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border:2px solid rgb(13, 104, 201);
 }
 
 #container{
@@ -64,7 +88,7 @@ body{
     display:flex;
     padding:10px;
     background: linear-gradient(90deg,rgb(0, 0, 44),rgb(0, 0, 0),rgb(14, 14, 31));
-    margin:15px;
+    margin:10px;
     border:2px solid rgb(12, 12, 91);
 }
 
