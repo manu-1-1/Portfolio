@@ -25,6 +25,14 @@ body{
     color:#e6e6e6;
 }
 
+.nav_el:hover{ 
+    color: #1e90ff;
+} 
+
+.nav_el.active{
+    border-bottom: 2px solid #1e90ff;
+} 
+
 #navbar img{
     position:fixed;
     left:5%;

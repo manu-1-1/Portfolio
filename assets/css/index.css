@@ -19,11 +19,20 @@ body{
     height:10vh;
     
 }
+
 .nav_el{
     padding:15px;
     text-decoration: none;
     color:#e6e6e6;
 }
+
+.nav_el:hover{ 
+    color: #1e90ff;
+} 
+
+.nav_el.active{
+    border-bottom: 2px solid #1e90ff;
+} 
 
 #navbar img{
     position:fixed;
@@ -53,10 +62,12 @@ body{
 }
 #imgid{
     margin:10vh 30px 10vh 0px;
-    width:40vw;
     padding:20px;
     display: flex;
     justify-content: center;
+    max-width: 100%;    
+    height: auto;       
+    object-fit: cover; 
 }
 
 #textid button{
@@ -132,4 +143,22 @@ footer{
     gap:10px;
     padding:10px;
     margin-right:10px;
+}
+
+@media(max-width:768px){
+#welcome{
+    flex-direction: column;
+    text-align:center;
+}
+ 
+#textid{ 
+    align-items: center; 
+}
+
+#imgid{
+    max-width: 200px;   
+    margin: 20px auto;  
+    display: block;
+}
+
 }
