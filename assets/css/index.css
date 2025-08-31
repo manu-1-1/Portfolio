@@ -1,20 +1,22 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
 body{
     height:100vh;
     background-image:url("/assets/images/bg.png.png");
     color:#e6e6e6;
     font-family: 'Inter',sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1,h2,h3{
     font-family: 'Poppins',sans-serif;
     text-shadow: 0 0 12px rgba(30, 144, 255, 0.6);
     animation: glowPulse 4s infinite ease-in-out;
-}
-
-@keyframes glowPulse{
-    0% {text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;}
-    50% {text-shadow: 0 0 5px #a8b2af, 0 0 40px #00ffaa;}
-    100% {text-shadow:0 0 10px #1e90ff, 0 0 20px #1e90ff;}
 }
 
 h1{
@@ -30,6 +32,12 @@ h2{
 h3{
     font-size: 24px;
     color: #e6e6e6;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #e0e0e0;
 }
 
 #navbar{
@@ -100,15 +108,17 @@ h3{
     color: white;
     padding:10px;
     border-radius: 5%;
-    cursor:pointer;
-    border:none;
+    cursor: pointer;
+    border: none;
 }
 #button_inside{
     text-decoration: none;
 }
 
-#aboutme{
-    /*background-image: url();*/
+button{
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    background:transparent;
 }
 
 #about_me_container{
@@ -187,3 +197,4 @@ footer{
 }
 
 }
+
