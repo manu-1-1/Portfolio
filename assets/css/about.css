@@ -6,7 +6,36 @@ body{
     height:100vh;
     background-image:url("/assets/images/bg.png.png");
     color:#e6e6e6;
+    font-family: 'Inter',sans-serif;
 }
+
+h1,h2,h3{
+    font-family: 'Poppins',sans-serif;
+    text-shadow: 0 0 12px rgba(30, 144, 255, 0.6);
+    animation: glowPulse 4s infinite ease-in-out;
+}
+
+@keyframes glowPulse{
+    0% {text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;}
+    50% {text-shadow: 0 0 5px #a8b2af, 0 0 40px #00ffaa;}
+    100% {text-shadow:0 0 10px #1e90ff, 0 0 20px #1e90ff;}
+}
+
+h1{
+    font-size: 48px;
+    color: #1dc5c2;
+}
+
+h2{
+    font-size: 32px;
+    color: #00ffaa;
+}
+
+h3{
+    font-size: 24px;
+    color: #e6e6e6;
+}
+
 #navbar{
     display: flex;
     justify-content: center;
@@ -42,7 +71,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;  
 }
+
+#about_me_sec img{
+    width: 100%;
+    max-width: 220px;
+    height: auto; 
+    object-fit: cover;
+}
+
 #aboutme{
     display: flex;
     justify-content: center;
@@ -50,7 +88,7 @@ body{
     max-width: 80%;
 }
 
-#aboutme h3{
+#aboutme h1{
     text-align: center;
     font-size: 30px;
     padding:15px;
@@ -77,9 +115,10 @@ body{
     min-height: 120px;
     padding:10px;
     margin:10px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 16px rgba(207, 191, 191, 0.4);
-    background: linear-gradient(135deg, #033291, #000000);
+    border: 1px solid rgba(30, 144, 255, 0.6);
+    background: rgba(15, 20, 35, 0.8);
+    border-radius: 12px;
 }
 
 .education-item p{

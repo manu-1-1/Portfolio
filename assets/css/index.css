@@ -1,12 +1,37 @@
-*{
-    padding:0px;
-    margin:0px;
-}
 body{
     height:100vh;
     background-image:url("/assets/images/bg.png.png");
     color:#e6e6e6;
+    font-family: 'Inter',sans-serif;
 }
+
+h1,h2,h3{
+    font-family: 'Poppins',sans-serif;
+    text-shadow: 0 0 12px rgba(30, 144, 255, 0.6);
+    animation: glowPulse 4s infinite ease-in-out;
+}
+
+@keyframes glowPulse{
+    0% {text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;}
+    50% {text-shadow: 0 0 5px #a8b2af, 0 0 40px #00ffaa;}
+    100% {text-shadow:0 0 10px #1e90ff, 0 0 20px #1e90ff;}
+}
+
+h1{
+    font-size: 48px;
+    color: #1dc5c2;
+}
+
+h2{
+    font-size: 32px;
+    color: #00ffaa;
+}
+
+h3{
+    font-size: 24px;
+    color: #e6e6e6;
+}
+
 #navbar{
     display: flex;
     justify-content: center;
