@@ -11,6 +11,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,h2,h3{
