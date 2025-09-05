@@ -7,6 +7,34 @@ body{
     background-image:url("/assets/images/bg.png.png");
     color:#e6e6e6;
 }
+
+h1,h2,h3{
+    font-family: 'Poppins',sans-serif;
+    text-shadow: 0 0 12px rgba(30, 144, 255, 0.6);
+    animation: glowPulse 4s infinite ease-in-out;
+}
+
+@keyframes glowPulse{
+    0% {text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;}
+    50% {text-shadow: 0 0 5px #a8b2af, 0 0 40px #00ffaa;}
+    100% {text-shadow:0 0 10px #1e90ff, 0 0 20px #1e90ff;}
+}
+
+h1{
+    font-size: 48px;
+    color: #1dc5c2;
+}
+
+h2{
+    font-size: 32px;
+    color: #00ffaa;
+}
+
+h3{
+    font-size: 24px;
+    color: #e6e6e6;
+}
+
 #navbar{
     display: flex;
     justify-content: center;
@@ -43,12 +71,14 @@ body{
 }
 
 #send_message{
-    max-width: 300px;
+    max-width: 320px;
     min-width: 250px;
     padding:15px;
     margin:15px;
-    border:2px solid blue;
-    border-radius: 5%;
+    border:2px solid #1e90ff;
+    background: rgba(0,0,30,0.6);
+    box-shadow:0 0 15px rgba(30,144,255,0.4);
+    border-radius: 10px;
     max-height: fit-content;
 }
 
@@ -61,43 +91,52 @@ body{
 }
 
 #send_message button{
-    padding: 5px;
-    background-color: rgb(34, 126, 247);
+    padding: 7px 12px;
+    background: linear-gradient(90deg, #1e90ff, #005fcb);
     display: flex;
+    align-items:center;
     gap:5px;
     border-radius:5px;
     border: 2px solid rgb(30, 9, 221);
+    cursor:pointer;
 }
 
 .input_ele{
     width: 95%;
     display:block;
-    margin:10px 0px 10px 0px ;
-    height:30px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border:2px solid rgb(13, 104, 201);
+    margin:10px 0px;
+    height:35px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border:1px solid rgb(13, 104, 201);
 }
 
 #container{
-    display:flex;
-    color:white;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: stretch;
 }
 
 #get_in_touch{
     display: flex;
     flex-direction: column;
     margin:15px;
-    border:2px solid blue;
-    border-radius: 5%;
+    border:2px solid rgb(13, 104, 201);;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 0 15px rgba(30,144,255,0.3);
+    background: rgba(10,20,40,0.7);;
 }
 
 .element{
     display:flex;
+    align-items: center;
     padding:10px;
-    background: linear-gradient(90deg,rgb(0, 0, 44),rgb(0, 0, 0),rgb(14, 14, 31));
-    margin:10px;
-    border:2px solid rgb(12, 12, 91);
+    background: rgba(12, 40, 97, 0.7);
+    margin:8px 0;
+    border:1px solid rgba(30,144,255,0.3);
+    border-radius: 8px;
 }
 
 .img{
