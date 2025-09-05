@@ -37,7 +37,7 @@ h3{
     justify-content: center;
     align-items: center;
     background-color:#0f2b56;
-    background: rgba(11, 12, 16, 0.4); /* semi-transparent dark */
+    background: rgba(11, 12, 16, 0.4); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding:10px;
@@ -68,26 +68,35 @@ h3{
     margin:20px;
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap:20px;
 }
 
 .project{
-    width:35%;
-    height:35%;
+    flex: 1 1 300px;
+    max-width:400px;
     margin:20px;
     border:2px solid #394949;
     padding:15px;
-    box-shadow: 5px 5px 5px rgb(2, 102, 209);
-    background: linear-gradient(90deg, #1b2a49,#000000);
+    box-shadow: 5px 5px 5px rgb(2, 102, 209,0.5);
+    background: rgba(0,0,30,0.7);
+    border-radius: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content:space-between;
 }
 
 .project ul{
-    margin-left:30px;
-    margin-bottom:10px;
+    margin:0 0 12px 20px;
+    padding:0;
+    list-style-type:disc;
+    list-style-position: outside;
+    line-height: 1.5;
 }
 
 .project p{
-    padding-top:15px;
-    padding-bottom:15px;
+    padding:15px 0px;
 }
 
 .project a{

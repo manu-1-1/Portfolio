@@ -162,7 +162,7 @@ h3{
 .certificate{
     background-color: #0d0f1a;
     box-shadow: 0 0 20px rgba(118, 198, 232, 0.919);
-    border-radius: 10%;
+    border-radius: 10px;
     padding:15px;
     margin:15px;
     border:2px solid rgba(255, 255, 255, 0.87);
