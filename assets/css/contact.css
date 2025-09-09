@@ -106,7 +106,7 @@ h3{
     background: linear-gradient(90deg, #1e90ff, #005fcb);
     display: flex;
     align-items:center;
-    gap:5px;
+    gap:10px;
     border-radius:5px;
     border: 2px solid rgb(30, 9, 221);
     cursor:pointer;
@@ -130,14 +130,16 @@ h3{
 }
 
 #get_in_touch{
+    max-width: 320px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     margin:15px;
     border:2px solid rgb(13, 104, 201);;
     border-radius: 10px;
-    padding: 12px;
+    padding: 10px;
     box-shadow: 0 0 15px rgba(30,144,255,0.3);
-    background: rgba(10,20,40,0.7);;
+    background: rgba(10,20,40,0.7);
 }
 
 .element{
@@ -145,15 +147,19 @@ h3{
     align-items: center;
     padding:10px;
     background: rgba(12, 40, 97, 0.7);
-    margin:8px 0;
+    margin:5px 0;
     border:1px solid rgba(30,144,255,0.3);
-    border-radius: 8px;
+    border-radius:8px;
 }
 
 .img{
     padding:5px 10px 5px 0px;
 }
 
+.info a{
+    text-decoration: none; 
+    color:white
+}
 
 footer{
     padding:25px;
