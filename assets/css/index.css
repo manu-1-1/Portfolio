@@ -4,7 +4,7 @@
 }
 
 body{
-    height:100vh;
+    min-height:100vh;
     background-image:url("/assets/images/bg.png.png");
     color:#e6e6e6;
     font-family: 'Inter',sans-serif;
@@ -33,7 +33,7 @@ h3{
     color: #e6e6e6;
 }
 
-p {
+p{
     font-size: 17px;
     line-height: 1.6;
     color: #e0e0e0;
@@ -44,7 +44,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color:#0f2b56;
-    background: rgba(11, 12, 16, 0.4); /* semi-transparent dark */
+    background: rgba(11, 12, 16, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding:10px;
@@ -70,12 +70,18 @@ p {
     position:fixed;
     left:5%;
 }
+
+#navbar img:hover{
+    transform: scale(1.1) rotate(5deg);
+    border-color: #1e90ff;
+}
+
 #welcome{
     display:flex;
     justify-content:center;
     align-items: center;
     gap:40px;
-    padding:10px;
+    padding:40px 20px;
 }
 
 #textid{
@@ -84,8 +90,8 @@ p {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    margin:10vh 0px 10vh 30px;
 }
+
 #textid p{
     margin-top:20px;
 }
@@ -95,9 +101,8 @@ p {
     padding:20px;
     display: flex;
     justify-content: center;
-    max-width: 100%;    
+    max-width: 400px;    
     height: auto;       
-    object-fit: cover; 
 }
 
 #textid button{
@@ -123,37 +128,318 @@ p {
 }
 
 footer{
-    padding:25px;
+    padding:30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to top, #000000, #0a2a43); 
+    border-top: 1px solid rgba(30,144,255,0.2);
+    margin-top: auto;
 }
 
 #contact_logo{
     display: flex;
     justify-content: flex-end;
-    gap:10px;
-    padding:10px;
-    margin-right:10px;
+    gap:15px;
+    padding:5px;
 }
 
-@media(max-width:768px){
-#welcome{
-    flex-direction: column;
-    text-align:center;
+
+@media (min-width:1200px){
+    #welcome{
+        padding: 60px 40px;
+        gap:60px;
+    }
+
+    #textid{
+        width:55vw;
+        padding:40px;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+
+    #imgid{
+        max-width: 450px;
+        margin:15vh 50px 15vh 0px;
+    }
 }
+
+@media (max-width: 1199px) and (min-width:992px){
+    #welcome{
+        padding: 50px 30px;
+        gap:50px;
+    }
+
+    #textid{
+        width:58vw;
+        padding:30px;
+    }
+
+    h1{
+        font-size: 44px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    #imgid{
+        max-width:380px;
+        margin:12vh 40px 12vh 0px;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px){
+    #welcome{
+        flex-direction: column;
+        padding:40px 25px;
+        gap:10px;
+        text-align: center;
+    }
+
+    #textid{
+        width:80vw;
+        align-items: center;
+        margin: 0 auto 5vh auto;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #imgid{
+        max-width: 320px;
+        margin:20px auto;
+        order:-1;
+    }
+
+    .nav_el{
+        padding:12px 18px;
+        font-size: 14px;
+    }
+    
+    footer{
+        padding:25px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #contact_logo{
+        gap:12px;
+    }
+}
+
+@media (max-width:767px) and (min-width:576px){
+    #welcome{
+        flex-direction: column;
+        text-align:center;
+        padding:30px 20px;
+        gap:30px;
+        min-height: 70vh;
+    }
  
-#textid{ 
-    align-items: center; 
+    #textid{ 
+        align-items: center;
+        width:90vw;
+        margin:2vh auto;
+        text-align: center;
+        padding:15px;
+    }
+
+    h1{
+        font-size: 38px;
+        line-height:1.2;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    p{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #imgid{
+        max-width: 280px;   
+        margin: 15px auto;  
+        order:-1;
+    }
+
+    #imgid > div{
+        width:250px;
+        height:300px;
+        font-size: 40px;
+    }
+
+    .nav_el{
+        padding:10px 15px;
+        font-size: 14px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap:20px;
+        text-align: center;
+        padding:20px;
+    }
+
+    #contact_logo{
+        justify-content: center;
+        gap:15px;
+    }
+
 }
 
-#imgid{
-    max-width: 200px;   
-    margin: 20px auto;  
-    display: block;
+@media (max-width:575px){
+    #welcome{
+        flex-direction: column;
+        text-align: center;
+        padding:20px 10px;
+        gap:25px;
+        min-height: 70vh;
+    }
+
+    #textid{
+        align-items: center;
+        width:95vw;
+        margin:2vh auto;
+        text-align: center;
+        padding:10px;
+    }
+
+    h1{
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    h2{
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    p{
+        font-size: 15px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    #imageid{
+        max-width: 220px;
+        margin:10px auto;
+        order:-1;
+        padding:15px;
+    }
+
+    #imgid > div{
+        width:200px;
+        height:240px;
+        font-size: 32px;
+    }
+
+    .nav_el{
+        padding:8px 12px;
+        font-size: 13px;
+        margin:2px;
+        border-radius: 6px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap:15px;
+        text-align: center;
+        padding:15px;
+        font-size: 14px;
+    }
+
+    #contact_logo{
+        justify-content:center;
+        gap:12px;
+        margin-right: 0px;
+    }
+
+    #contact_logo > div{
+        width:28px;
+        height:28px;
+        font-size: 12px;
+    }
 }
 
-}
+ @media (max-width: 400px) {
+            h1{
+                font-size:28px;
+            }
 
+            h2{
+                font-size:18px;
+            }
+
+            p{
+                font-size:14px;
+            }
+
+            #welcome{
+                padding:15px 5px;
+                gap:5px;
+            }
+
+            #textid{
+                width:98vw;
+                padding:5px;
+            }
+
+            #imgid{
+                max-width:180px;
+                order: -1;
+                padding:10px auto;
+                margin:15px auto;
+            }
+
+            #imgid > div{
+                width:160px;
+                height:200px;
+                font-size:28px;
+            }
+
+            #textid button{
+                padding:8px 20px;
+                font-size:13px;
+            }
+
+            .nav_el{
+                padding:6px 10px;
+                font-size:12px;
+            }
+
+            footer{
+                padding:10px;
+                font-size:12px;
+            }
+
+            #contact_logo a > div{
+                width:25px;
+                height:25px;
+                font-size:10px;
+            }
+        }
