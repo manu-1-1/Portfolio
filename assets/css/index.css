@@ -92,9 +92,7 @@ p {
 #textid p{
     margin-top:20px;
 }
-#textid button{
-    margin-top:20px;
-}
+
 #imgid{
     margin:10vh 30px 10vh 0px;
     padding:20px;
@@ -106,21 +104,25 @@ p {
 }
 
 #textid button{
-    background-color: #1e90ff;
-    color: white;
-    padding:10px;
-    border-radius: 5%;
+    margin-top:20px;
+    background:linear-gradient(135deg,#1e90ff,#00ffaa);
+    padding:12px 28px;
+    box-shadow: 0 4px 12px rgba(30,144,255,0.3);
+    border-radius:30px;
     cursor: pointer;
     border: none;
 }
 #button_inside{
+    color: white;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
-button{
-    color: #2563eb;
-    border: 2px solid #2563eb;
-    background:transparent;
+#textid button:hover{
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 6px 16px rgba(30,144,255,0.5);
 }
 
 footer{
