@@ -44,11 +44,12 @@ h3{
     justify-content: center;
     align-items: center;
     background-color:#0f2b56;
-    background: rgba(11, 12, 16, 0.4); /* semi-transparent dark */
+    background: rgba(11, 12, 16, 0.4); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    padding:10px;
-    height:10vh;
+    padding:10px 20px;
+    min-height:10vh;
+    flex-wrap: wrap;
 }
 .nav_el{
     padding:15px;
@@ -66,8 +67,10 @@ h3{
 
 
 #navbar img{
-    position:fixed;
-    left:5%;
+    position:absolute;
+    left:20px;
+    width:60px;
+    height:60px;
 }
 
 #about_me_sec{
@@ -155,6 +158,11 @@ h3{
     height: 60px;
 }
 
+#languages,#tools,#devolepment_tools{
+    display:flex;
+    flex-wrap: wrap;
+}
+
 #certifications{
     text-align: center;
     display: flex;
@@ -178,6 +186,7 @@ h3{
 
 
 footer{
+    width:100%;
     padding:25px;
     display: flex;
     flex-direction: row;
@@ -193,3 +202,64 @@ footer{
     padding:10px;
     margin-right:10px;
 }
+
+@media (max-width:786px){
+    #about_me_sec{
+        flex-direction: column;
+    }
+    
+    #education{
+        flex-direction: column;
+        margin:15px;
+        gap:20px;
+    }
+
+    #certifications{
+        gap:15px;
+    }
+
+    footer{
+        flex-direction: column;
+        margin:0px;
+        padding:15px;
+    }
+}
+
+@media (max-width:576px){
+    #about_me_sec{
+        flex-direction: column;
+    }
+    
+    #education{
+        flex-direction: column;
+        margin:15px;
+        gap:20px;
+    }
+
+    #certifications{
+        margin:10px;
+        gap:10px;
+    }
+
+    footer{
+        flex-direction: column;
+        margin:0px;
+        padding:15px;
+    }
+}
+
+@media (max-width:400px){
+    #education{
+        flex:1 1 200px;
+        margin:10px;
+        padding:15px;
+        gap:15px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding:15px;
+        margin:0px;
+    }
+}
+
