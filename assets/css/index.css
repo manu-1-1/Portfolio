@@ -1,6 +1,7 @@
 *{
     margin:0px;
     padding:0px;
+    box-sizing: border-box; 
 }
 
 body{
@@ -49,7 +50,6 @@ p{
     -webkit-backdrop-filter: blur(12px);
     padding:10px;
     height:10vh;
-    
 }
 
 .nav_el{

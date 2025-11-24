@@ -1,6 +1,7 @@
 *{
     padding:0px;
     margin:0px;
+    box-sizing: border-box; 
 }
 body{
     height:100vh;
@@ -9,6 +10,7 @@ body{
     font-family: 'Inter',sans-serif;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 h1,h2,h3{
