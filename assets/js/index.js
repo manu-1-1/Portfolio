@@ -41,12 +41,26 @@ const socIc=document.querySelectorAll('#contact_logo a img');
 socIc.forEach(icon=>{
     icon.style.transition='transform 0.3s ease, filter 0.3s ease';
     icon.addEventListener('mouseenter',function(){
-        this.style.transform='translateY(-5px) sclae(1.1)';
-        this.style.filter='brigtness(1.2)';
+        this.style.transform='translateY(-5px) scale(1.2)';
+        this.style.filter='brightness(1.2)';
     });
     icon.addEventListener('mouseleave',function(){
-        this.style.transform='translateY(0) sclae(1)';
-        this.style.filter='brigtness(1)';
+        this.style.transform='translateY(0) scale(1)';
+        this.style.filter='brightness(1)';
     });
 })
 
+const cvDown=document.querySelector("button");
+const downLink=document.getElementById("button_inside");
+if(downLink && cvDown){
+    cvDown.addEventListener("click",function(e){
+        e.preventDefault();
+        const link=document.createElement('a');
+        link.href="/assets/cv/cv.pdf";
+        link.download="Manukrishna_JP_CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        console.log("Downloading CV");
+    });
+}
