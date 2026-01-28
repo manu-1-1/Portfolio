@@ -173,10 +173,36 @@ footer{
     margin-top: auto;
 }
 
+footer span{
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+
 #contact_logo{
     display: flex;
     justify-content: flex-end;
     gap:10px;
     padding:10px;
     margin-right:10px;
+}
+
+#send_message button:hover{
+    box-shadow: 0px 0px 15px rgba(30,144,255,0.8);
+    transform: translateY(-2px);
+}
+
+#send_message button{
+    transition: all 0.3s ease;
+}
+
+.input_ele{
+    transition: all ease 0.4s ease;
+    padding-left:8px;
+}
+
+.input_ele:focus{
+    outline:none;
+    border:2px solid #1e90ff;
+    box-shadow: 0 0 10px rgba(30,144,255,0.5);
 }
