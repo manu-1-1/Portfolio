@@ -43,21 +43,3 @@ portfolio-website/
 │
 └── README.md               # Project documentation
 
-
-## 🛠️ Built With
-
-### Core Technologies
-- **HTML5** - Structure and content
-- **CSS3** - Styling and animations
-- **JavaScript (ES6+)** - Interactivity and dynamic features
-
-### Design & Fonts
-- **Google Fonts** - Inter & Poppins font families
-- **Custom CSS Animations** - Glow effects, transitions, hover states
-- **Flexbox & Grid** - Modern layout techniques
-
-### Tools & Libraries
-- **Responsive Design** - Mobile-first approach
-- **CSS Variables** - Consistent theming
-- **Form Validation** - Client-side validation
-
