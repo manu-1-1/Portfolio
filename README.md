@@ -1,11 +1,22 @@
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
 A modern, responsive portfolio website showcasing my skills, projects, and professional experience in Cybersecurity and Software Development.
 
 
-## 👨‍💻 About
+## About
 
-Hi! I'm **Manukrishna J P**, a Computer Science student specializing in Cybersecurity at Amrita Vishwa Vidyapeetham. This portfolio website highlights my journey, skills, projects, and achievements in the field of technology and cybersecurity.
+Hi! I'm **Manukrishna J P**, a Computer Science student specializing in Cybersecurity at Amrita Vishwa Vidyapeetham. This is my personal portfolio website built to showcase my skills, projects, and experience as a developer.  
+It serves as a central place to learn more about me and my work.
+
+## Project Status
+
+This project is currently not deployed and does not include a backend.
+It is a static frontend project.
+
+##  Tech Stack
+- HTML5
+- CSS3
+- JavaScript
 
 ## 📁 Project Structure
 
