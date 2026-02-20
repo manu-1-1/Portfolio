@@ -1,56 +1,43 @@
-# Personal Portfolio Website
+<<<<<<< HEAD
+# My Portfolio
 
-A modern, responsive portfolio website showcasing my skills, projects, and professional experience in Cybersecurity and Software Development.
+A personal portfolio site I built to put everything in one place — who I am, what I've worked on, and how to reach me.
 
+## What's inside
 
-## About
+- **Home** – quick intro and a download link for my CV
+- **About** – my background, education, skills, and certifications
+- **Projects** – things I've actually built, with a short description and links to the repos
+- **Contact** – a form to reach me directly
 
-Hi! I'm **Manukrishna J P**, a Computer Science student specializing in Cybersecurity at Amrita Vishwa Vidyapeetham. This is my personal portfolio website built to showcase my skills, projects, and experience as a developer.  
-It serves as a central place to learn more about me and my work.
+## Tech
 
-## Project Status
+Plain HTML, CSS, and a little JavaScript. No frameworks, no build step — just open `index.html` in a browser and it works.
 
-This project is currently not deployed and does not include a backend.
-It is a static frontend project.
+## Projects featured
 
-##  Tech Stack
-- HTML5
-- CSS3
-- JavaScript
+**Nuclear Launch Code Simulation** — a cybersecurity project built around the Chinese Remainder Theorem. The idea is to split a secret into multiple shares so that only specific combinations can reconstruct it. It's a simplified but functional demonstration of how real-world cryptographic secret splitting works. Written in C++ with a small HTML/CSS/JS frontend.
 
-## 📁 Project Structure
+**This portfolio** — the site itself. Responsive layout, smooth animations, clean navigation.
 
+## Running locally
+
+No setup needed. Clone the repo and open `index.html` directly, or serve it with something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code if you want hot reload.
+
+```bash
+git clone https://github.com/manu-1-1/Portfolio.git
+cd Portfolio
+# open index.html in your browser
 ```
-portfolio-website/
-│
-├── index.html              # Home page with hero section
-├── about.html              # About me, education, skills, certifications
-├── projects.html           # Portfolio projects showcase
-├── contact.html            # Contact form and information
-│
-├── assets/
-│   ├── css/
-│   │   ├── index.css       # Styles for home page
-│   │   ├── about.css       # Styles for about page
-│   │   ├── projects.css    # Styles for projects page
-│   │   └── contact.css     # Styles for contact page
-│   │
-│   ├── js/
-│   │   ├── index.js        # JavaScript for home page
-│   │   ├── about.js        # JavaScript for about page
-│   │   ├── projects.js     # JavaScript for projects page
-│   │   └── contact.js      # JavaScript for contact page
-│   │
-│   ├── images/             # All images and logos
-│   │   ├── logo.png
-│   │   ├── bg.png
-│   │   ├── my_img.png
-│   │   ├── skill icons/
-│   │   ├── certificates/
-│   │   └── social media icons/
-│   │
-│   └── cv/
-│       └── cv.pdf          # Downloadable resume
-│
-└── README.md               # Project documentation
 
+## Contact
+
+- Email: manukrishna06211@gmail.com
+- LinkedIn: [manukrishna-jp](https://www.linkedin.com/in/manukrishna-jp)
+- GitHub: [manu-1-1](https://github.com/manu-1-1)
+- Telegram: [@the_manu11](https://t.me/the_manu11)
+- X: [@themanu1110](https://x.com/themanu1110?s=21)
+
+---
+
+Built by Manukrishna J P — CS student at Amrita Vishwa Vidyapeetham, interested in cybersecurity, networking, and building things that actually work.
