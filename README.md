@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My Portfolio
 
 A personal portfolio site I built to put everything in one place — who I am, what I've worked on, and how to reach me.
